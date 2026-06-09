@@ -6,6 +6,6 @@ function pickDate(choice) {
   } else if (choice === "escape room") {
     result.textContent = "Escape room it is. Let’s see if we’re a good team 🔐";
   } else if (choice === "movie") {
-    result.textContent = "Movie date sounds perfect. Popcorn is mandatory 🎬";
+    result.textContent = "Movie date sounds perfect 🎬";
   }
 }
