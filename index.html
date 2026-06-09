@@ -1,44 +1,35 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Home - Christopher Khuc</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Date Night?</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
-  <header>
-    <h1>Christopher Khuc's Website</h1>
+  <div class="container">
+    <h1>So... about our next date 👀</h1>
 
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="ethics.html">Ethics</a>
-    </nav>
-  </header>
+    <p class="intro">
+      I had a really good time with you, so I made this extremely official website
+      to ask what you’d want to do next.
+    </p>
 
-  <main>
-    <section class="card">
-      <h2>Home</h2>
-      <p>Welcome to my GitHub page. Here you can find information about myself as well as my interests and ethical issues with technology.</p>
+    <h2>Pick your date:</h2>
 
-      <table>
-        <tr>
-          <th>Name</th>
-          <td>Christopher Khuc</td>
-        </tr>
-        <tr>
-          <th>Introduction</th>
-          <td>My name is Christopher Khuc. I have an interest in cybersecurity, computer science/information technology, and how we build our own websites or mobile applications.</td>
-        </tr>
-        <tr>
-          <th>Hobbies</th>
-          <td>Programming, working out, basketball, and learning about technology.</td>
-        </tr>
-      </table>
-    </section>
-  </main>
+    <div class="options">
+      <button onclick="pickDate('rock climbing')">🧗 Rock Climbing</button>
+      <button onclick="pickDate('escape room')">🔐 Escape Room</button>
+      <button onclick="pickDate('movie')">🎬 Movie</button>
+    </div>
 
-  <footer>
-    <p>Created by Christopher Khuc</p>
-  </footer>
+    <p id="result"></p>
+
+    <p class="small-text">
+      No pressure... but the website is legally binding.
+    </p>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
