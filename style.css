@@ -8,6 +8,7 @@ body {
   justify-content: center;
   align-items: center;
   color: #333;
+  flex-direction: column;
 }
 
 .container {
