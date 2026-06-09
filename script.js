@@ -1,26 +1,11 @@
-let selectedDateOption = "";
+function pickDate(choice) {
+  const result = document.getElementById("result");
 
-function showDateTime(choice) {
-  selectedDateOption = choice;
-
-  document.getElementById("dateTimeSection").classList.remove("hidden");
-
-  document.getElementById("chosenDateText").textContent =
-    "You picked " + choice + " — now choose a day and time 😊";
-
-  document.getElementById("finalResult").textContent = "";
-}
-
-function showFinalAnswer() {
-  const date = document.getElementById("date").value;
-  const time = document.getElementById("time").value;
-  const finalResult = document.getElementById("finalResult");
-
-  if (date === "" || time === "") {
-    finalResult.textContent = "Pick both a day and time first 😭";
-    return;
+  if (choice === "rock climbing") {
+    result.textContent = "Great choice. I was hoping you’d pick rock climbing 🧗";
+  } else if (choice === "escape room") {
+    result.textContent = "Escape room it is. Let’s see if we’re a good team 🔐";
+  } else if (choice === "movie") {
+    result.textContent = "Movie date sounds perfect. Popcorn is mandatory 🎬";
   }
-
-  finalResult.textContent =
-    "Perfect. You picked " + selectedDateOption + " on " + date + " at " + time + " 💕 Screenshot this and send it to me.";
 }
