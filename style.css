@@ -8,7 +8,6 @@ body {
   justify-content: center;
   align-items: center;
   color: #333;
-  flex-direction: column;
 }
 
 .container {
@@ -65,4 +64,12 @@ button:hover {
   margin-top: 25px;
   font-size: 0.9rem;
   color: #777;
+}
+
+.top-gif,
+.bottom-gif {
+  width: 180px;
+  max-width: 80%;
+  border-radius: 15px;
+  margin: 15px 0;
 }
